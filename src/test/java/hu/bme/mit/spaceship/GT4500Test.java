@@ -23,12 +23,12 @@ public class GT4500Test {
   @Test
   public void fireTorpedo_Single_Success(){
     // Arrange
+    when (mockStore.fire(1)).thenReturn(true);
+    when (mockStore.isEmpty().thenReturn(false);
 
-    // Act
-    boolean result = ship.fireTorpedo(FiringMode.SINGLE);
+    when (mockStoreSecondary.fire()).thenReturn(true);
+    when (mockStore.isEmpty().thenReturn(false)
 
-    // Assert
-    assertEquals(true, result);
   }
 
   @Test
